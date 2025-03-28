@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchSensors } from "../services/api";
 import SensorCard from "../components/SensorCard";
-import Chart from "../components/Chart";
-import WasteMap from "../components/Map";
+import Chart from "../components/chart";
 
 export default function Dashboard() {
   const [sensors, setSensors] = useState([]);
@@ -35,8 +34,3 @@ export default function Dashboard() {
     </div>
   );
 }
-
-<div className="mt-6">
-  <h3 className="text-xl font-bold mb-4">Optimized Collection Routes</h3>
-  <WasteMap />
-</div>;
